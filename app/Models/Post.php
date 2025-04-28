@@ -16,7 +16,8 @@ class Post extends Model
         return $this->hasMany(Comment::class);
     }
 
-    public function authors()
+    //singular author so no S's
+    public function author()
     {
         return $this->belongsTo(Author::class);
     }

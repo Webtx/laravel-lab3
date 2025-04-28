@@ -1,7 +1,7 @@
 <?php
 
 namespace Database\Factories;
-
+use App\Models\Author;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -17,7 +17,7 @@ class AuthorFactory extends Factory
     public function definition(): array
     {
         return [
-            //'author_id' => null,!laravel auto generates id's
+       
             'name' => fake()->name,
             'email'=> fake()->email,
             'created_at' => now(),  // Use the current timestamp for created_at
